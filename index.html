@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ximena Alvarez — Web &amp; UI/UX Developer</title>
+<meta name="description" content="Portfolio of Ximena Alvarez, junior web developer and UI/UX designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="thread-progress" aria-hidden="true"><div class="thread-progress__fill" id="threadFill"></div></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="nav__mark"><img src="assets/logo.png" alt="Ximena Alvarez — GK logo"></a>
+  <nav class="nav__links">
+    <a href="#work"><span>Trabajo</span><em>work</em></a>
+    <a href="#design"><span>Diseño</span><em>design</em></a>
+    <a href="#about"><span>Sobre mí</span><em>about</em></a>
+    <a href="#contact"><span>Contacto</span><em>contact</em></a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <canvas id="loom" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__inner">
+      <p class="eyebrow">Lima, Perú → Port Coquitlam, BC</p>
+      <h1 class="hero__title">
+        <span class="reveal-word">Ximena</span>
+        <span class="reveal-word">Alvarez</span>
+      </h1>
+      <p class="hero__role reveal-fade">Junior Web Developer <span class="dot">·</span> UI/UX Designer</p>
+      <p class="hero__desc reveal-fade">I build responsive, accessible interfaces and design digital experiences woven with the geometry, color, and craft of Andean textile art.</p>
+      <div class="hero__cta reveal-fade">
+        <a href="#work" class="btn btn--primary">See my code</a>
+        <a href="#design" class="btn btn--ghost">See my design work</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to next section">
+      <span></span>
+    </a>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <p class="eyebrow">Sobre mí</p>
+      <h2>Two threads, one weave.</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__lead">
+        I'm a web designer and full-stack developer finishing my Diploma in Computer Studies at Langara College (Dean's Honour Roll), building toward graduation in August 2026. My work sits at the intersection of two crafts: writing clean, accessible React and JavaScript, and designing interfaces people actually enjoy using.
+      </p>
+      <p class="about__body">
+        I grew up around Peruvian textiles &amp; pattern — the stepped crosses, the grid-woven color-blocking of Andean aguayo cloth — and I see the same logic in pixel art and in CSS grids: small, disciplined units building something expressive. That instinct shows up in everything I make, from a Rust-powered desktop widget to a bilingual educational platform.
+      </p>
+      <ul class="about__facts">
+        <li><span class="k">Based</span><span class="v">Port Coquitlam, BC · open to relocation</span></li>
+        <li><span class="k">Studying</span><span class="v">Computer Studies, Langara College — Aug 2026</span></li>
+        <li><span class="k">Stack</span><span class="v">React, JavaScript, Node.js, C++, Python, SQL</span></li>
+        <li><span class="k">Design</span><span class="v">Figma, pixel art, game-inspired UI</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <p class="eyebrow">Herramientas</p>
+      <h2>What I build with.</h2>
+    </div>
+    <div class="skills__cols">
+      <div class="skills__col">
+        <h3>Frontend</h3>
+        <ul class="chips">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>React</li><li>TypeScript</li><li>Babylon.js</li>
+        </ul>
+      </div>
+      <div class="skills__col">
+        <h3>Backend &amp; Data</h3>
+        <ul class="chips">
+          <li>Node.js</li><li>PHP (PDO)</li><li>MongoDB</li><li>MySQL / PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="skills__col">
+        <h3>Languages</h3>
+        <ul class="chips">
+          <li>C++</li><li>Python</li><li>Java</li><li>Bash</li>
+        </ul>
+      </div>
+      <div class="skills__col">
+        <h3>Design &amp; Workflow</h3>
+        <ul class="chips">
+          <li>Figma</li><li>Git &amp; GitHub</li><li>REST APIs</li><li>SOLID principles</li><li>Accessibility</li><li>Responsive design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
+
+  <!-- ===== WORK / PROJECTS ===== -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="eyebrow">Trabajo — Desarrollo</p>
+      <h2>Projects.</h2>
+    </div>
+
+    <article class="project">
+      <div class="project__meta">
+        <p class="project__role">Full-Stack Developer &amp; UI/UX Designer</p>
+        <h3 class="project__title">Musicfy</h3>
+        <p class="project__stack">React · Rust (Tauri) · WebSockets · Chrome Extension</p>
+        <ul class="project__list">
+          <li>Lightweight desktop widget showing real-time YouTube Music metadata — title, artist, album art</li>
+          <li>Chrome/Edge extension using the MediaSession API to pull metadata straight from the browser</li>
+          <li>WebSocket bridge for fast, seamless extension → Tauri app communication</li>
+          <li>Transparent, always-on-top UI with pixel-art-friendly styling and smooth animation</li>
+          <li>Rust backend handling window management, the WebSocket server, and installer packaging</li>
+        </ul>
+        <a class="project__link" href="https://github.com/gk-Ximena/Musicfy" target="_blank" rel="noopener">View on GitHub ↗</a>
+        <a class="project__link project__link--second" href="#design">See the Figma UI design ↓</a>
+      </div>
+      <div class="project__visual" data-motif="musicfy" aria-hidden="true"></div>
+    </article>
+
+    <article class="project project--reverse">
+      <div class="project__meta">
+        <p class="project__role">Full-Stack Developer &amp; UI/UX Designer</p>
+        <h3 class="project__title">VetFirstSteps</h3>
+        <p class="project__stack">HTML · CSS · JavaScript · PHP (PDO) · MySQL</p>
+        <ul class="project__list">
+          <li>Educational platform with modular veterinary-science topics</li>
+          <li>Interactive quiz system built in vanilla JavaScript</li>
+          <li>Light/dark theme toggle and an EN/ES language switch</li>
+          <li>Category filters over a fully responsive layout</li>
+          <li>PHP contact form with database storage, plus secure login &amp; signup via PHP + PDO</li>
+        </ul>
+        <a class="project__link" href="https://gk-ximena.github.io/VetFirstSteps/" target="_blank" rel="noopener">View live site ↗</a>
+      </div>
+      <div class="project__visual" data-motif="vet" aria-hidden="true"></div>
+    </article>
+
+    <article class="project">
+      <div class="project__meta">
+        <p class="project__role">Frontend Developer</p>
+        <h3 class="project__title">Day Widget</h3>
+        <p class="project__stack">React · Tauri · CSS</p>
+        <ul class="project__list">
+          <li>Lightweight desktop widget showing the weekday and real-time temperature</li>
+          <li>Weather data via the OpenWeatherMap API</li>
+          <li>Custom UI designed in Figma, built with smooth CSS animation</li>
+          <li>Packaged as a cross-platform desktop app with Tauri</li>
+        </ul>
+        <a class="project__link" href="https://github.com/gk-Ximena/Day_Widget" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      <div class="project__visual" data-motif="day" aria-hidden="true"></div>
+    </article>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
+
+  <!-- ===== DESIGN GALLERY ===== -->
+  <section class="design" id="design">
+    <div class="section-head">
+      <p class="eyebrow">Diseño — UI/UX</p>
+      <h2>Case studies.</h2>
+      <p class="section-note">Every tile below opens the PDF straight in the browser. See the note at the bottom of this section for how to add your own.</p>
+    </div>
+
+    <div class="design__grid" id="designGrid">
+      <!-- Populated by script.js from the CASE_STUDIES array. Edit that array to add your real PDFs. -->
+    </div>
+
+    <p class="design__howto">
+      <strong>Adding your own case studies:</strong> drop each PDF into the <code>/design</code> folder, then add an entry to the <code>CASE_STUDIES</code> array at the top of <code>script.js</code> with a title, one-line description, and the file name. The tile, thumbnail pattern, and viewer are generated automatically.
+    </p>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
+
+  <!-- ===== EXPERIENCE / EDUCATION ===== -->
+  <section class="path" id="path">
+    <div class="section-head">
+      <p class="eyebrow">Recorrido</p>
+      <h2>Along the way.</h2>
+    </div>
+    <div class="path__grid">
+      <div class="path__col">
+        <h3>Education</h3>
+        <div class="path__item">
+          <p class="path__title">Diploma in Computer Studies</p>
+          <p class="path__sub">Langara College, Vancouver, BC — Dean's Honour Roll · Expected Aug 2026</p>
+          <p class="path__detail">Web Dev 1 &amp; 2, Full-Stack Dev 1, JavaScript, Unix Tools &amp; Scripting, Database Systems, Software Practices</p>
+        </div>
+        <div class="path__item">
+          <p class="path__title">Mobile App Development</p>
+          <p class="path__sub">Complutense University of Madrid — Feb 2022</p>
+        </div>
+        <div class="path__item">
+          <p class="path__title">Standard First Aid with CPR-C &amp; AED, Level C</p>
+          <p class="path__sub">St. Mark James Training — Jul 2024</p>
+        </div>
+      </div>
+      <div class="path__col">
+        <h3>Work</h3>
+        <div class="path__item">
+          <p class="path__title">Sales Associate</p>
+          <p class="path__sub">Winners — Coquitlam, BC · 2024–Present</p>
+          <p class="path__detail">Awarded Start Shrink Smart for loss-prevention awareness; JOY Committee member organizing employee events.</p>
+        </div>
+        <div class="path__item">
+          <p class="path__title">Crew Member</p>
+          <p class="path__sub">Wendy's — Port Coquitlam, BC · 2022–2023</p>
+          <p class="path__detail">Employee of the Month, multiple times; strong teamwork and time-management under high-volume pressure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="eyebrow">Contacto</p>
+      <h2>Let's build something.</h2>
+      <p class="contact__desc">Open to junior web developer and UI/UX roles — and always happy to talk pixel art.</p>
+      <div class="contact__links">
+        <a href="mailto:ximenalvarezmontoya@gmail.com">ximenalvarezmontoya@gmail.com</a>
+        <a href="https://github.com/gk-Ximena" target="_blank" rel="noopener">github.com/gk-Ximena</a>
+        <a href="https://www.linkedin.com/in/ximena-alvarez-01b691225/" target="_blank" rel="noopener">linkedin.com/in/ximena-alvarez</a>
+        <a href="tel:+16046906431">+1 (604) 690-6431</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built by Ximena Alvarez · Port Coquitlam, BC</p>
+</footer>
+
+<!-- PDF viewer modal -->
+<div class="modal" id="pdfModal" role="dialog" aria-modal="true" aria-label="Case study viewer" hidden>
+  <div class="modal__bar">
+    <p id="modalTitle"></p>
+    <button id="modalClose" aria-label="Close viewer">✕</button>
+  </div>
+  <div class="modal__body" id="modalBody"></div>
+</div>
+
+<!-- shared SVG defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="chakana-border" viewBox="0 0 240 16">
+      <path d="M0 8 L8 8 L8 0 L16 0 L16 8 L24 8 L24 16 L32 16 L32 8 L40 8 L40 0 L48 0 L48 8 L56 8 L56 16 L64 16 L64 8 L72 8 L72 0 L80 0 L80 8 L88 8 L88 16 L96 16 L96 8 L104 8 L104 0 L112 0 L112 8 L120 8 L120 16 L128 16 L128 8 L136 8 L136 0 L144 0 L144 8 L152 8 L152 16 L160 16 L160 8 L168 8 L168 0 L176 0 L176 8 L184 8 L184 16 L192 16 L192 8 L200 8 L200 0 L208 0 L208 8 L216 8 L216 16 L224 16 L224 8 L232 8 L232 0 L240 0" fill="none" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>
