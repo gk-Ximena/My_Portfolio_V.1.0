@@ -69,8 +69,8 @@
       <ul class="about__facts">
         <li><span class="k">Based</span><span class="v">Port Coquitlam, BC · open to relocation</span></li>
         <li><span class="k">Studying</span><span class="v">Computer Studies, Langara College — Aug 2026</span></li>
-        <li><span class="k">Stack</span><span class="v">React, JavaScript, Node.js, C++, Python, SQL</span></li>
-        <li><span class="k">Design</span><span class="v">Figma, pixel art, game-inspired UI</span></li>
+        <li><span class="k">Stack</span><span class="v">React, JavaScript, TypeScript, Node.js, PHP, Rust, C++, SQL</span></li>
+        <li><span class="k">Design</span><span class="v">Figma, Adobe Creative Suite, brand identity, pixel art</span></li>
       </ul>
     </div>
   </section>
@@ -91,6 +91,12 @@
         </ul>
       </div>
       <div class="skills__col">
+        <h3>Design &amp; Multimedia</h3>
+        <ul class="chips">
+          <li>Figma</li><li>Canva</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>After Effects</li><li>Premiere Pro</li><li>Adobe Animate</li>
+        </ul>
+      </div>
+      <div class="skills__col">
         <h3>Backend &amp; Data</h3>
         <ul class="chips">
           <li>Node.js</li><li>PHP (PDO)</li><li>MongoDB</li><li>MySQL / PostgreSQL</li>
@@ -99,13 +105,13 @@
       <div class="skills__col">
         <h3>Languages</h3>
         <ul class="chips">
-          <li>C++</li><li>Python</li><li>Java</li><li>Bash</li>
+          <li>C++</li><li>Rust</li><li>Java</li><li>Bash</li>
         </ul>
       </div>
       <div class="skills__col">
-        <h3>Design &amp; Workflow</h3>
+        <h3>Workflow &amp; Concepts</h3>
         <ul class="chips">
-          <li>Figma</li><li>Git &amp; GitHub</li><li>REST APIs</li><li>SOLID principles</li><li>Accessibility</li><li>Responsive design</li>
+          <li>Git &amp; GitHub</li><li>REST APIs</li><li>SOLID principles</li><li>Accessibility</li><li>Responsive design</li><li>Brand identity &amp; style guides</li>
         </ul>
       </div>
     </div>
@@ -123,14 +129,14 @@
     <article class="project">
       <div class="project__meta">
         <p class="project__role">Full-Stack Developer &amp; UI/UX Designer</p>
-        <h3 class="project__title">Musicfy</h3>
+        <h3 class="project__title">Musicfy <span class="project__badge">v1.0.0</span></h3>
         <p class="project__stack">React · Rust (Tauri) · WebSockets · Chrome Extension</p>
         <ul class="project__list">
           <li>Lightweight desktop widget showing real-time YouTube Music metadata — title, artist, album art</li>
           <li>Chrome/Edge extension using the MediaSession API to pull metadata straight from the browser</li>
           <li>WebSocket bridge for fast, seamless extension → Tauri app communication</li>
           <li>Transparent, always-on-top UI with pixel-art-friendly styling and smooth animation</li>
-          <li>Rust backend handling window management, the WebSocket server, and installer packaging</li>
+          <li>Rust backend handling window management, the WebSocket server, and installer packaging — <strong>v1.0.0 published</strong>, live Windows installer</li>
         </ul>
         <a class="project__link" href="https://github.com/gk-Ximena/Musicfy" target="_blank" rel="noopener">View on GitHub ↗</a>
         <a class="project__link project__link--second" href="#design">See the Figma UI design ↓</a>
@@ -184,6 +190,15 @@
 
     <div class="design__grid" id="designGrid">
       <!-- Populated by script.js from the CASE_STUDIES array.-->
+    </div>
+
+    <div class="design__subhead">
+      <p class="eyebrow">Diseño — Marcas</p>
+      <h3>Logo design.</h3>
+      <p class="section-note">Brand marks from personal and project identity work.</p>
+    </div>
+    <div class="logo__grid" id="logoGrid">
+      <!-- Populated by script.js from the LOGOS array.-->
     </div>
     <!--
     <p class="design__howto">
@@ -264,6 +279,8 @@
   </defs>
 </svg>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
