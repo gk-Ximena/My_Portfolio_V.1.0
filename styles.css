@@ -294,6 +294,14 @@ main > section:not(.hero){
   background-image: conic-gradient(from 0deg at 50% 50%, var(--ink) 0 15deg, transparent 15deg 90deg);
   background-size:22px 22px;
 }
+.project__visual[data-motif="waste"]{background-color:var(--teal);}
+.project__visual[data-motif="waste"]::before{
+  background-image:
+    linear-gradient(var(--cotton) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cotton) 1px, transparent 1px);
+  background-size:24px 24px;
+  opacity:.45;
+}
 
 @media (max-width:800px){
   .project, .project--reverse{grid-template-columns:1fr; direction:ltr;}
@@ -349,7 +357,7 @@ main > section:not(.hero){
   margin-top:32px; font-family:var(--font-mono); font-size:12.5px; color:#5a5346;
   background:var(--cotton-dim); padding:16px 18px; border-radius:var(--radius);
 }
-.design__howto code{background:var(--ink); color:var(--cotton); padding:1px 5px; border-radius:2px;}
+.design__howto code, .project__list code{background:var(--ink); color:var(--cotton); padding:1px 5px; border-radius:2px; font-family:var(--font-mono); font-size:0.9em;}
 
 /* ================= logo design subsection ================= */
 .design__subhead{
