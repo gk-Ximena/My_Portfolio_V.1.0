@@ -18,10 +18,11 @@
 <header class="nav" id="nav">
   <a href="#home" class="nav__mark"><img src="assets/logo.png" alt="Ximena Alvarez — GK logo"></a>
   <nav class="nav__links">
-    <a href="#work"><span>Trabajo</span><em>work</em></a>
-    <a href="#design"><span>Diseño</span><em>design</em></a>
-    <a href="#about"><span>Sobre mí</span><em>about</em></a>
-    <a href="#contact"><span>Contacto</span><em>contact</em></a>
+    <a href="#work"><span>Work</span><em>Trabajo</em></a>
+    <a href="#design"><span>Design</span><em>Diseño</em></a>
+    <a href="#it"><span>IT</span><em>Sistemas</em></a>
+    <a href="#about"><span>About</span><em>Sobre mí</em></a>
+    <a href="#contact"><span>Contact</span><em>Contacto</em></a>
   </nav>
   <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -34,12 +35,12 @@
   <section class="hero" id="home">
     <canvas id="loom" class="hero__canvas" aria-hidden="true"></canvas>
     <div class="hero__inner">
-      <p class="eyebrow">Lima, Perú → Port Coquitlam, BC</p>
+      <p class="eyebrow">La Libertad, Perú → Port Coquitlam, BC</p>
       <h1 class="hero__title">
         <span class="reveal-word">Ximena</span>
         <span class="reveal-word">Alvarez</span>
       </h1>
-      <p class="hero__role reveal-fade">Junior Web Developer <span class="dot">·</span> UI/UX Designer</p>
+      <p class="hero__role reveal-fade">Junior Developer <span class="dot">·</span> UI/UX Designer <span class="dot">·</span> IT Professional</p> 
       <p class="hero__desc reveal-fade">I build responsive, accessible interfaces and design digital experiences woven with the geometry, color, and craft of Andean textile art.</p>
       <div class="hero__cta reveal-fade">
         <a href="#work" class="btn btn--primary">See my code</a>
@@ -61,14 +62,14 @@
     </div>
     <div class="about__grid">
       <p class="about__lead">
-        I'm a web designer and full-stack developer finishing my Diploma in Computer Studies at Langara College (Dean's Honour Roll), building toward graduation in August 2026. My work sits at the intersection of two crafts: writing clean, accessible React and JavaScript, and designing interfaces people actually enjoy using.
+        I'm a recent Computer Studies graduate from Langara College and a Full-Stack Developer with a strong foundation in web development, software solutions, and IT support. My work sits at the intersection of three disciplines: building scalable applications, creating intuitive user experiences, and solving technical problems that help people and organizations work more effectively. I specialize in React, JavaScript, modern web technologies, and full-stack application development, while also bringing practical IT knowledge in troubleshooting, systems, and technical support. I enjoy delivering solutions that are not only functional and efficient, but also accessible, reliable, and enjoyable to use.
       </p>
       <p class="about__body">
         I grew up around Peruvian textiles &amp; pattern — the stepped crosses, the grid-woven color-blocking of Andean aguayo cloth — and I see the same logic in pixel art and in CSS grids: small, disciplined units building something expressive. That instinct shows up in everything I make, from a Rust-powered desktop widget to a bilingual educational platform.
       </p>
       <ul class="about__facts">
         <li><span class="k">Based</span><span class="v">Port Coquitlam, BC · open to relocation</span></li>
-        <li><span class="k">Studying</span><span class="v">Computer Studies, Langara College — Aug 2026</span></li>
+        <li><span class="k">Studies</span><span class="v">Computer Studies, Langara College — Aug 2026</span></li>
         <li><span class="k">Stack</span><span class="v">React, JavaScript, TypeScript, Node.js, PHP, Rust, C++, SQL</span></li>
         <li><span class="k">Design</span><span class="v">Figma, Adobe Creative Suite, brand identity, pixel art</span></li>
       </ul>
@@ -105,7 +106,7 @@
       <div class="skills__col">
         <h3>Languages</h3>
         <ul class="chips">
-          <li>C++</li><li>Rust</li><li>Java</li><li>Bash</li>
+          <li>C++</li><li>Rust</li><li>Java</li><li>Bash</li><li>Python</li>
         </ul>
       </div>
       <div class="skills__col">
@@ -220,6 +221,67 @@
     <p class="design__howto">
       <strong>Adding your own case studies:</strong> drop each PDF into the <code>/design</code> folder, then add an entry to the <code>CASE_STUDIES</code> array at the top of <code>script.js</code> with a title, one-line description, and the file name. The tile, thumbnail pattern, and viewer are generated automatically.
     </p>-->
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
+
+  <!-- ===== IT & SYSTEMS ===== -->
+  <section class="it" id="it">
+    <div class="section-head">
+      <p class="eyebrow">Sistemas — Redes</p>
+      <h2>IT &amp; systems.</h2>
+      <p class="section-note">A network design term project for my Networking course at Langara, modeled on the real store I work at.</p>
+    </div>
+
+    <p class="it__intro">
+      As a Sales Associate at Winners/HomeSense, I kept running into the same three problems on the floor: unstable Wi-Fi, POS system crashes during transactions, and inefficient warehouse inventory tracking. For my final project, I designed a full retail network in Cisco Packet Tracer, structured around the 7-layer OSI model, that solves all three.
+    </p>
+
+    <div class="it__video">
+      <iframe src="https://www.youtube.com/embed/-0B1nqNW9BM" title="Secure retail network design walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <ul class="it__highlights">
+      <li><strong>Department-based VLANs &amp; subnets</strong> — store floor, HR, finance, warehouse, and management each isolated on their own segment</li>
+      <li><strong>ACLs &amp; MAC filtering</strong> — only pre-approved hardware can reach sensitive zones like security and warehouse automation</li>
+      <li><strong>WPA2-encrypted staff &amp; guest Wi-Fi</strong> — guest network fully isolated from internal systems</li>
+      <li><strong>Internal FTP &amp; DNS servers</strong> — secure inventory file transfer and internal name resolution</li>
+      <li><strong>ASA firewall services</strong> monitoring inbound and outbound traffic across the whole design</li>
+    </ul>
+
+    <div class="it__gallery">
+      <figure>
+        <img src="assets/it/topology-overview.png" alt="Full network topology showing all store departments and zones" loading="lazy">
+        <figcaption>Full topology — every department and zone</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/it/offices-zone.png" alt="Management, Store Manager, Finance and HR office network segments" loading="lazy">
+        <figcaption>Management, Finance &amp; HR — VLAN-segmented by department</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/it/store-floor.png" alt="Store floor network with POS registers and inventory tablets" loading="lazy">
+        <figcaption>Store floor — POS registers &amp; inventory tablets</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/it/lunch-room.png" alt="Staff Wi-Fi and lunch room network, isolated from core systems" loading="lazy">
+        <figcaption>Staff Wi-Fi &amp; lunch room — WPA2-secured</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/it/warehouse.png" alt="Warehouse network with barcode scanners and automation sensors" loading="lazy">
+        <figcaption>Warehouse — scanners, sensors &amp; automation</figcaption>
+      </figure>
+    </div>
+
+    <a class="it__download" href="assets/it/WinnersHomeSense-Network.pkt" download>Download the Packet Tracer file (.pkt) ↓</a>
+
+    <div class="it__subhead">
+      <p class="eyebrow">Sistemas — Scripting</p>
+      <h3>Scripting &amp; automation.</h3>
+    </div>
+    <ul class="it__highlights it__highlights--secondary">
+      <li><strong>Bash scripting (Unix course):</strong> file-organization and permissions automation across nested directories, plus text-processing assignments with automated test suites</li>
+      <li><strong>Python (Intro to Computer Science):</strong> early simulation programs, including a cellular-automaton-style bubble simulation and a Game of Life structure</li>
+    </ul>
   </section>
 
   <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 16" preserveAspectRatio="none"><use href="#chakana-border"/></svg></div>
